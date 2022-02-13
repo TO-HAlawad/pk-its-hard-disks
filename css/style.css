@@ -6,71 +6,10 @@
     font-family: 'Road Rage', cursive;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 20px;
-
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #20bf6b;
-    height: 100vh;
-    width: 100%;
-}
-
-.card {
-    align-content: space-between;
-    align-items: flex-end;
-    background: #f7b731;
-    max-width: 350px;
-    width: 100%;
-    height: 460px;
-    padding: 5px;
-    margin: 10px 15px;
-
-    border-radius: 20px;
-}
-
-.card-inner-extern img {
-    max-width: 350px;
-    width: 100%;
-    height: 220px;
-    border-radius: 20px;
-
-}
-
-.card-text-hdd,
-.card-text-ssd,
-.card-text-sshd,
-.card-text-extern {
-    text-align: center;
-    background: #fff;
-    border-radius: 10px;
-    margin: 0 30px;
-    padding: 10px;
-    font-size: 24px;
-    height: 130px;
-    top: 0;
-    transform: translateY(200%);
-    overflow: auto;
 }

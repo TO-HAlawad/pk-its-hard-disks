@@ -1,15 +1,533 @@
-@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
 * {
-    margin: auto 0;
+    margin: 0;
     padding: 0;
-    font-family: 'Road Rage', cursive;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(0deg, #b60033 0%, #000066 100%);
+        background-blend-mode: overlay, overlay, difference, normal;
+        font-family: 'Salsa', cursive;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        top: 0;
+        font-size: 22px;
+        background-color: #b50034;
+        box-shadow: 0 0 10px #000;
+    }
+
+    nav .container {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    nav .container ul {
+        list-style: none;
+    }
+
+    nav .container ul li {
+        display: inline-block;
+        margin: 0 -3px;
+    }
+
+    nav .container ul li a {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    nav .container ul li a:hover {
+        background-color: #000066;
+        transition: all .7s ease;
+    }
+
+    nav .container ul li.active {
+        background-color: #000066;
+        transition: background-color .3s ease-in-out;
+    }
+
+    nav .container ul li.active a {
+        text-shadow: 0 0 10px #fff;
+    }
+
+    #cover-img {
+        position: relative;
+        background: url("/assets/imgs/main-bg-2.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 140%;
+        height: 100vh;
+    }
+
+    #title {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    #title h1 {
+        background-color: #b50034;
+        color: #fff;
+        padding: 15px;
+        text-align: start;
+        text-transform: uppercase;
+        top: 90px;
+        left: 40px;
+        position: sticky;
+        font-size: 60px;
+    }
+
+    #title h2 {
+        background-color: #b50034;
+        color: #fff;
+        padding: 15px;
+        text-align: start;
+        text-transform: uppercase;
+        top: 179px;
+        left: 40px;
+        position: sticky;
+        font-size: 36.7px;
+    }
+
+
+    section {
+        padding: 75px;
+        color: #111;
+        height: auto;
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .section-content {
+        display: block;
+        text-align: start;
+        width: 90%;
+        padding: 15px 0;
+        font-size: 22px;
+    }
+
+    .section-text-start {
+        color: #fff;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        color: #111;
+        height: auto;
+        width: 100%;
+        font-size: 32px;
+
+    }
+
+    /* Section Number 1 Start */
+    #BG-img1 {
+        background: url("/assets/imgs/bg-1.jpg");
+        position: relative;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 150%;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .section-text-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(180deg, #b60033 0%, #000066 100%);
+        background-blend-mode: overlay, overlay, difference, normal;
+        color: #fff;
+        padding-top: 200px;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+    }
+
+    .container .card {
+        position: relative;
+        width: 40%;
+        height: 650px;
+        max-height: 1200px;
+        margin: 5%;
+        box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+    }
+
+    .container .card .content {
+        padding: 50px;
+        text-align: center;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .container .card .content h2 {
+        position: absolute;
+        top: -30px;
+        right: -17px;
+        font-size: 3.8em;
+    }
+
+    .container .card:nth-child(1) .content h2 {
+        color: rgba(255, 0, 0, .3);
+    }
+
+    .container .card:nth-child(2) .content h2 {
+        color: rgba(0, 102, 255, .3);
+    }
+
+    .container .card:nth-child(3) .content h2 {
+        color: rgba(102, 255, 0, .3);
+    }
+
+    .container .card:nth-child(4) .content h2 {
+        color: rgba(0, 0, 0, .3);
+    }
+
+    .container .card .content h3 {
+        margin-top: 50px;
+        font-size: 1.3em;
+        color: #fff;
+        z-index: 1;
+    }
+
+    .container .card .content p {
+        margin-top: 30px;
+        font-size: .7em;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .container .card .content a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 50px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: all .3s;
+    }
+
+    .container .card .content a:hover {
+        background-color: #000;
+        color: #fff;
+        box-shadow: none;
+    }
+
+    .container .card:nth-child(2) .content a,
+    .container .card:nth-child(3) .content a,
+    .container .card:nth-child(4) .content a {
+        display: none;
+    }
+
+
+    .container-arten {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+    }
+
+    .container-arten .card-arten {
+        position: relative;
+        width: 40%;
+        height: 650px;
+        max-height: 1200px;
+        margin: 60px;
+        box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+    }
+
+    .container-arten .card-arten .content-arten {
+        padding: 50px;
+        text-align: center;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .container-arten .card-arten .content-arten h2 {
+        position: absolute;
+        top: -30px;
+        right: -17px;
+        font-size: 3.8em;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .container-arten .card-arten .content-arten h3 {
+        margin-top: 100px;
+        font-size: .8em;
+        color: #fff;
+        z-index: 1;
+    }
+
+    .container-arten .card-arten .content-arten p {
+        margin-top: 30px;
+        font-size: .8em;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .container-arten .card-arten .content-arten a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 50px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: all .3s;
+    }
+
+    .container-arten .card-arten .content-arten a:hover {
+        background-color: #000;
+        color: #fff;
+        box-shadow: none;
+    }
+
+    /* Section Number One End */
+
+    /* Section Number Two Start */
+    #BG-img2 {
+        background: url("/assets/imgs/bg-4.webp");
+        position: relative;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 150%;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .section-text-two {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #000066;
+        color: #fff;
+        height: 100%;
+    }
+
+    /* Section Number Two End */
+
+    /* Section Number Three Start */
+    #BG-img2 {
+        background: url("/assets/imgs/bg-5.jpg");
+        position: relative;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 150%;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .section-text-three {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #000066;
+        color: #fff;
+        height: 100%;
+    }
+
+    .container-formatierung {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+    }
+
+    .container-formatierung .card-formatierung {
+        position: relative;
+        width: 40%;
+        height: 550px;
+        max-height: 1200px;
+        margin: 5%;
+        box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+    }
+
+    .container-formatierung .card-formatierung .content-formatierung {
+        padding: 50px;
+        text-align: center;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .container-formatierung .card-formatierung .content-formatierung h2 {
+        position: absolute;
+        top: -30px;
+        right: -17px;
+        font-size: 3.8em;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .container-formatierung .card-formatierung .content-formatierung h3 {
+        margin-top: 50px;
+        font-size: .8em;
+        color: #fff;
+        z-index: 1;
+    }
+
+    .container-formatierung .card-formatierung .content-formatierung p {
+        margin-top: 30px;
+        font-size: .8em;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .container-formatierung .card-formatierung .content-formatierung a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 50px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: all .3s;
+    }
+
+    .container-formatierung .card-formatierung .content-formatierung a:hover {
+        background-color: #000;
+        color: #fff;
+        box-shadow: none;
+    }
+
+    /* Section Number Three End */
+
+    /* Section Number Four Start */
+    #BG-img3 {
+        background: url("/assets/imgs/bg-6.jpg");
+        position: relative;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100%;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .section-text-four {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #000066;
+        color: #fff;
+        height: 100%;
+    }
+
+    /* Section Number Four End */
+
+    /* Section Number Five Start */
+    #BG-img4 {
+        background: url("/assets/imgs/bg-8.jpg");
+        position: relative;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 110%;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .section-text-five {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #000066;
+        color: #fff;
+        height: 100%;
+    }
+
+    /* Section Number Five End */
+
+    /* Section Number Six Start */
+    #BG-img5 {
+        background: url("/assets/imgs/bg-9.jpg");
+        position: relative;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 110%;
+        height: 100vh;
+        width: 100%;
 }
 
+.section-text-six {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000066;
+    color: #fff;
+    height: 100%;
+    padding-bottom: 50px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
+/* Section Number Six End */
 
+.footer {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    background-color: #b50034;
 }

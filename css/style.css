@@ -65,7 +65,7 @@
 
     #cover-img {
         position: relative;
-        background: url("/assets/imgs/main-bg-2.jpg");
+        background: url("../assets/imgs/main-bg-2.jpg");
         background-position: center;
         background-attachment: fixed;
         background-size: 140%;
@@ -136,7 +136,7 @@
 
     /* Section Number 1 Start */
     #BG-img1 {
-        background: url("/assets/imgs/bg-1.jpg");
+        background: url("../assets/imgs/bg-1.jpg");
         position: relative;
         background-position: center;
         background-attachment: fixed;
@@ -334,7 +334,7 @@
 
     /* Section Number Two Start */
     #BG-img2 {
-        background: url("/assets/imgs/bg-4.webp");
+        background: url("../assets/imgs/bg-4.webp");
         position: relative;
         background-position: center;
         background-attachment: fixed;
@@ -357,7 +357,7 @@
 
     /* Section Number Three Start */
     #BG-img2 {
-        background: url("/assets/imgs/bg-5.jpg");
+        background: url("../assets/imgs/bg-5.jpg");
         position: relative;
         background-position: center;
         background-attachment: fixed;
@@ -456,7 +456,7 @@
 
     /* Section Number Four Start */
     #BG-img3 {
-        background: url("/assets/imgs/bg-6.jpg");
+        background: url("../assets/imgs/bg-6.jpg");
         position: relative;
         background-position: center;
         background-attachment: fixed;
@@ -479,7 +479,7 @@
 
     /* Section Number Five Start */
     #BG-img4 {
-        background: url("/assets/imgs/bg-8.jpg");
+        background: url("../assets/imgs/bg-8.jpg");
         position: relative;
         background-position: center;
         background-attachment: fixed;
@@ -502,7 +502,7 @@
 
     /* Section Number Six Start */
     #BG-img5 {
-        background: url("/assets/imgs/bg-9.jpg");
+        background: url("../assets/imgs/bg-9.jpg");
         position: relative;
         background-position: center;
         background-attachment: fixed;
